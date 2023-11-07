@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>opacity</title>
+</head>
+
+<style>
+    .container{
+        width: 650px;
+        height: 1000px;
+        border: 2px solid gray;
+    }
+    ::selection{
+        color: red;
+        background: yellow;
+    }
+
+    body{
+        background-color: #E7E9EB;
+    }
+    img{
+        width: 200px;
+        height: 200px;
+    }
+
+
+/* 1................ */
+    #imga{
+        opacity: 0.2;
+    }
+    
+    #imgb{
+        opacity: 0.5;
+
+    }
+
+    #imgc{
+        opacity: 1;
+    }
+
+    /* .img1{
+        width: 200px;
+        height: 200px;
+    } */
+
+/* 2.......... */
+
+    /* .img1{
+        opacity: 0.1;
+    } */
+
+    .img1:hover{
+        opacity: 0.5;
+        
+    }
+/* 
+    .img2{
+        width: 200px;
+        height: 200px;
+    } */
+
+/* 3................ */
+
+    .img2{
+        opacity: 0.5;
+    }
+
+    .img2:hover{
+        opacity: 1.0;
+        
+    }
+
+
+    /* ::first-line{
+        color: red;
+    } */
+
+
+/* container2..................... */
+
+.container2{
+    width: 500px;
+    height: 250px;
+    border: 2px solid gray;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    row-gap: 5px;
+    column-gap: 2px;
+}
+
+.child{
+    width: 150px;
+    height: 100px;
+    border: 2px solid red;
+    background-color: aqua;
+    text-align: center;
+}
+</style>
+<body>
+<div class="container">
+    <p>css pseudo-element</p>
+    <p>this is line</p>
+    <h2>opacity</h2>
+    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/ad/eb/cb/this-image-is-valley.jpg?w=1200&h=1200&s=1" alt="" id="imga">
+    <img src="https://img.traveltriangle.com/blog/wp-content/uploads/2017/05/Cattles-grazing-in-the-Betaab-Valley-in-Kashmir-SS23052017.png" alt="" id="imgb">
+    <img src="https://www.shutterstock.com/shutterstock/photos/1687137475/display_1500/stock-photo-river-creek-in-mountain-valley-water-stream-in-summer-green-nature-1687137475.jpg" alt=""  id="imgc">
+       
+
+    <h2>opacity with hover</h2>
+    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/ad/eb/cb/this-image-is-valley.jpg?w=1200&h=1200&s=1" alt=""  class="img1">
+    <img src="https://img.traveltriangle.com/blog/wp-content/uploads/2017/05/Cattles-grazing-in-the-Betaab-Valley-in-Kashmir-SS23052017.png" alt=""  class="img1">
+    <img src="https://www.shutterstock.com/shutterstock/photos/1687137475/display_1500/stock-photo-river-creek-in-mountain-valley-water-stream-in-summer-green-nature-1687137475.jpg" alt=""  class="img1">
+       
+
+
+    <h2>opacity with hover</h2>
+    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/ad/eb/cb/this-image-is-valley.jpg?w=1200&h=1200&s=1" alt=""  class="img2">
+    <img src="https://img.traveltriangle.com/blog/wp-content/uploads/2017/05/Cattles-grazing-in-the-Betaab-Valley-in-Kashmir-SS23052017.png" alt=""  class="img2">
+    <img src="https://www.shutterstock.com/shutterstock/photos/1687137475/display_1500/stock-photo-river-creek-in-mountain-valley-water-stream-in-summer-green-nature-1687137475.jpg" alt=""  class="img2">
+       
+</div>
+
+<h2>display-grid</h2>
+<div class="container2">
+    <div class="child" id="box1">1</div>
+    <div class="child" id="box2">2</div>
+    <div class="child" id="box3">3</div>
+    <div class="child" id="box3">4</div>
+    <div class="child" id="box5">5</div>
+    <div class="child" id="box6">6</div>
+    <div class="child" id="box3">7</div>
+    <div class="child" id="box8">8</div>
+    <div class="child" id="box9">9</div>
+</div>
+</body>
+</html>
